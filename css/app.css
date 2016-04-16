@@ -1,0 +1,90 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar-brand {
+    float:none;
+    padding-top:0;
+    font-size:16px;
+}
+
+.navmenu,
+.navbar-offcanvas {
+    width: 500px;
+}
+
+.navmenu-fixed-left {
+    overflow-x: hidden;
+}
+
+.panel-heading:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+.list-content {
+    padding-left: 10px;
+}
+
+.form-control:focus {
+    border-color: #49bfff;
+    outline: 0;
+    -webkit-box-shadow: inset 0 0 0;
+    box-shadow: inset 0 0 0;
+}
+
+.map {
+    height: 100%;
+    right: 16px;
+    left: 500px;
+    overflow: hidden;
+    width: calc(100% - 500px);
+}
+
+.impressum {
+    margin-left: 10px;
+}
+
+.errors {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .navmenu,
+    .navbar-offcanvas {
+        width: 300px;
+    }
+
+    .map {
+        left: 300px;
+        width: calc(100% - 300px);
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        padding-top: 50px;
+    }
+
+    .listView {
+        position: absolute;
+        z-index: 1000;
+    }
+
+    .map {
+        left: 0;
+        width: 100%;
+    }
+
+    .navmenu,
+    .navbar-offcanvas {
+        padding-top: 50px;
+    }
+
+    .navbar-brand {
+        float: left;
+        padding-top: 15px;
+    }
+}
